@@ -1,0 +1,31 @@
+{
+  "name": "senior-thesis",
+  "version": "1.0.0",
+  "description": "senior thesis project at Hack Reactor",
+  "engines": {
+    "node": "6.11.x"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "heroku-postbuild": "cd react-ui/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "react-ui/node_modules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tenination/senior-thesis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tenination/senior-thesis/issues"
+  },
+  "homepage": "https://github.com/tenination/senior-thesis#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "license": "MIT",
+  "devDependencies": {}
+}
