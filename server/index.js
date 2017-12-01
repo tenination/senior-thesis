@@ -15,6 +15,7 @@ app.get('/api', function (req, res) {
 
 // All remaining requests return the React app, so it can handle routing
 app.get('*', function(request, response) {
+	console.log('React page is being called');
 	response.sendFile(path.resolve(__dirname, '../react-ui/build', 'index.html'));
 });
 
